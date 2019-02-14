@@ -6,7 +6,7 @@ function getRandomNumber() {
     return Math.floor(Math.random() * BACKIMG_NUM) + 1;
 }
 
-function loadBackGraoundImg() {
+function loadBackGroundImg() {
     const randomNumber = getRandomNumber();
     const image = new Image();
     image.src = `./resources/img/background/${randomNumber}.jpg`;
@@ -15,7 +15,7 @@ function loadBackGraoundImg() {
 }
 
 function init() {
-    loadBackGraoundImg();
+    loadBackGroundImg();
 }
 
 init();
