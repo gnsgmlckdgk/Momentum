@@ -48,12 +48,13 @@ function printToDo(text) {
     const span = document.createElement("span");
 
     span.innerText = `  ${text}`;
-    delBtn.innerHTML = "❌";
+    //delBtn.innerHTML = "❌";
     delBtn.addEventListener("click", handleDelteToDo);
     li.id = ++newId;
 
     li.appendChild(delBtn);
     li.appendChild(span);
+    li.classList.add(SHOWING);
 
     toDoListUl.appendChild(li);
 
